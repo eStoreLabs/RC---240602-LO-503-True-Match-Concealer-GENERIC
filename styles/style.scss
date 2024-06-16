@@ -347,6 +347,12 @@ body {
       font-weight: 700;
     }
 
+    &__subtitle {
+      @include text;
+      font-size: 14px;
+      text-align: center;
+    }
+
     &__text {
       margin: 0;
       padding: 0;
@@ -432,10 +438,14 @@ body {
       font-family: inherit;
       font-weight: inherit;
       font-size: 35px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 32px;
       text-transform: uppercase;
       line-height: 1.1;
+
+      & span {
+        font-weight: 400;
+      }
     }
 
     &__title-light {
@@ -581,10 +591,8 @@ body {
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      gap: 20px 10px;
+      gap: 20px 40px;
     }
 
     &__container-narrow {
@@ -600,7 +608,7 @@ body {
     }
 
     &__single {
-      width: 205px;
+      width: 253px;
       max-width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -644,7 +652,7 @@ body {
       font-weight: inherit;
       text-align: center;
       font-size: 16px;
-      margin-bottom: 8px;
+      margin-bottom: 15px;
     }
 
     &__link {
@@ -678,9 +686,11 @@ body {
 
   .es-multi {
     margin: 56px auto 56px;
+    margin-bottom: 120px;
 
     &__info {
       margin: 56px auto 56px;
+      margin-bottom: 0;
       font-size: 12px;
       text-align: center;
     }
@@ -762,7 +772,7 @@ body {
   #es-loreal.es-loreal .es-cross__packshot {
     -webkit-transform: scale(1);
     transform: scale(1);
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   #es-loreal.es-loreal .es-cross__packshot--narrow {
     margin-bottom: 32px;
@@ -771,7 +781,7 @@ body {
     position: relative;
   }
   #es-loreal.es-loreal .es-multi {
-    margin-bottom: 120px;
+    margin-top: 0;
   }
 
   #es-loreal.es-loreal .es-multi__subtitle {
@@ -918,15 +928,19 @@ body {
     left: 50%;
   }
   #es-loreal.es-loreal .es-cross__line--1 {
-    top: -120px;
+    top: -108px;
+    left: 55%;
   }
   #es-loreal.es-loreal .es-cross__line--2 {
-    top: -56px;
+    top: -80px;
+    left: 30%;
   }
   #es-loreal.es-loreal .es-cross__line--3 {
-    top: -56px;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+    top: -80px;
+    transform: translateX(-189px);
+  }
+  #es-loreal.es-loreal .es-cross__img--3 {
+    max-width: 150%;
   }
 
   #es-loreal.es-loreal .es-cross_container_photo {
