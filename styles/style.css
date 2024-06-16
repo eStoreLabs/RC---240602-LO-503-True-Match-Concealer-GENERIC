@@ -203,12 +203,24 @@ body {
 #es-loreal.es-loreal .es-benefits__single {
   width: 328px;
 }
+#es-loreal.es-loreal .es-benefits__image-text {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 20px #fff, 0 0 20px #ffffff, 0 0 20px #ffffff, 0 0 20px #ffffff;
+}
 #es-loreal.es-loreal .es-benefits__single:hover .es-benefits__img--bg {
   transform: scale(1.1);
 }
 #es-loreal.es-loreal .es-benefits__image {
   overflow: hidden;
   margin-bottom: 16px;
+  position: relative;
 }
 #es-loreal.es-loreal .es-benefits__img {
   max-width: 100%;
@@ -246,12 +258,13 @@ body {
 #es-loreal.es-loreal .es-benefits__title {
   margin: 0;
   padding: 0;
+  margin-top: 30px;
+  margin-bottom: 16px;
   line-height: inherit;
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
   text-align: center;
-  margin-bottom: 16px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -320,7 +333,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 32px;
   text-transform: uppercase;

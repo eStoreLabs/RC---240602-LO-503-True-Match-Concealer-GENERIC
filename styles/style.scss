@@ -267,6 +267,19 @@ body {
       width: 328px;
     }
 
+    &__image-text {
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0 0 20px #fff, 0 0 20px #ffffff, 0 0 20px #ffffff,
+        0 0 20px #ffffff;
+    }
+
     &__single:hover .es-benefits__img--bg {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
@@ -275,6 +288,7 @@ body {
     &__image {
       overflow: hidden;
       margin-bottom: 16px;
+      position: relative;
     }
 
     &__img {
@@ -322,12 +336,13 @@ body {
     &__title {
       margin: 0;
       padding: 0;
+      margin-top: 30px;
+      margin-bottom: 16px;
       line-height: inherit;
       color: inherit;
       font-family: inherit;
       font-weight: inherit;
       text-align: center;
-      margin-bottom: 16px;
       text-transform: uppercase;
       font-weight: 700;
     }
@@ -416,7 +431,7 @@ body {
       color: inherit;
       font-family: inherit;
       font-weight: inherit;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 600;
       margin-bottom: 32px;
       text-transform: uppercase;
