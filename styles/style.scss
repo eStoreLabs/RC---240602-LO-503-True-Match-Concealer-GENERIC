@@ -437,7 +437,7 @@ body {
       color: inherit;
       font-family: inherit;
       font-weight: inherit;
-      font-size: 35px;
+      font-size: 30px;
       font-weight: 700;
       margin-bottom: 32px;
       text-transform: uppercase;
@@ -456,7 +456,7 @@ body {
     }
 
     &__title span {
-      font-size: 32px;
+      font-size: 24px;
     }
 
     &__text {
@@ -484,13 +484,42 @@ body {
     }
   }
 
-  .es-shades {
-    padding: 0 0 96px;
+  .es-slick-carousel {
+    max-width: 150px;
+  }
 
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0 4px;
+    padding: 0;
+    margin: 0;
+  }
+  .slick-dots li {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #a5a3a3;
+    opacity: 1;
+  }
+  .slick-dots li:not(:last-child) {
+    margin-right: 6px;
+  }
+  .slick-dots li.slick-active {
+    background: #000000;
+  }
+  .slick-dots li button {
+    display: none;
+  }
+
+  .es-slick-carousel--desktop {
+    display: none;
+  }
+
+  .es-shades {
     &__container {
-      /* padding: 32px 16px; */
       margin: auto;
-      max-width: 700px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -502,11 +531,46 @@ body {
       gap: 2px 1px;
     }
     &__single {
+      width: 100%;
       position: relative;
       text-align: center;
-      width: 85px;
+      width: 130px;
       text-transform: uppercase;
       font-weight: 500;
+    }
+    &__first-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 190px;
+      margin-bottom: 20px;
+
+      & p {
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+    &__group-title,
+    &__group-subtitle {
+      font-size: 12px;
+      font-weight: 700;
+      min-height: 30px;
+    }
+
+    &__group-subtitle--light {
+      font-weight: 500;
+      text-transform: none;
+    }
+
+    &__second-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__group-title {
+      margin: 0;
     }
     &__subtitle {
       text-align: center;
@@ -515,7 +579,6 @@ body {
       padding: 32px 16px 32px 16px;
     }
     &__container-2 {
-      /* padding: 32px 16px; */
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -732,6 +795,10 @@ body {
     }
     &__par {
       text-align: center;
+      &--bold {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
     }
   }
 }
@@ -750,6 +817,30 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  #es-loreal.es-loreal .es-shades__single--mobile {
+    display: none;
+  }
+  #es-loreal.es-loreal .es-slick-carousel--mobile {
+    display: none;
+  }
+
+  #es-loreal.es-loreal .es-slick-carousel--desktop {
+    display: block;
+  }
+
+  #es-loreal.es-loreal .es-slick-carousel--desktop {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 2px 1px;
+  }
+
   #es-loreal.es-loreal .es-info__title {
     font-size: 40px;
   }
@@ -763,6 +854,7 @@ body {
   #es-loreal.es-loreal .es-cross__packshot--desktop {
     display: block;
   }
+
   #es-loreal.es-loreal .es-cross__packshot--mobile {
     display: none;
   }
@@ -813,6 +905,20 @@ body {
 }
 
 @media screen and (min-width: 998px) {
+  #es-loreal.es-loreal .es-you__title span {
+    font-size: 32px;
+  }
+
+  #es-loreal.es-loreal .es-shades__second-line {
+    gap: 20px;
+  }
+
+  #es-loreal.es-loreal .es-shades__group {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
   #es-loreal.es-loreal .es-kv {
     position: relative;
   }
@@ -960,17 +1066,20 @@ body {
   }
   #es-loreal.es-loreal .es-cross__content {
     width: 100%;
-    /* padding: 20px 50px; */
   }
 
   #es-loreal.es-loreal .es-cross__image {
-    /* display: block; */
     width: 35%;
     object-fit: cover;
     height: fit-content;
   }
   #es-loreal.es-loreal .es-cross__image img {
     display: block;
+  }
+  #es-loreal.es-loreal .es-shades {
+    &__single {
+      width: 160px;
+    }
   }
 }
 
