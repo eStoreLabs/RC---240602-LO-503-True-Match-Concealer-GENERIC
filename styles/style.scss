@@ -35,7 +35,6 @@ body {
   background: #fff;
 
   * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -66,11 +65,7 @@ body {
     }
 
     &__bg {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: right;
-      -ms-flex-pack: right;
       justify-content: right;
       margin-bottom: 32px;
     }
@@ -169,13 +164,8 @@ body {
     }
 
     &__badge {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       gap: 20px 10px;
     }
@@ -252,13 +242,8 @@ body {
 
   .es-benefits {
     &__container {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       gap: 48px 2px;
     }
@@ -281,7 +266,6 @@ body {
     }
 
     &__single:hover .es-benefits__img--bg {
-      -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
 
@@ -295,13 +279,10 @@ body {
       max-width: 100%;
       display: block;
       margin: 0 auto;
-      -webkit-transition: all 0.6s;
       transition: all 0.6s;
     }
 
     &__img--banner {
-      -webkit-box-flex: 4;
-      -ms-flex: 4;
       flex: 4;
     }
 
@@ -325,7 +306,6 @@ body {
       font-size: 32px;
       text-align: center;
       line-height: 1.1;
-      -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
 
@@ -366,8 +346,6 @@ body {
     &__text--banner {
       text-transform: uppercase;
       font-size: 64px;
-      -webkit-box-flex: 4;
-      -ms-flex: 4;
       flex: 4;
     }
 
@@ -396,15 +374,8 @@ body {
     &__banner {
       padding: 32px 16px;
       min-height: 407px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: column;
       flex-flow: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       display: none;
     }
@@ -520,13 +491,8 @@ body {
   .es-shades {
     &__container {
       margin: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       gap: 2px 1px;
     }
@@ -579,13 +545,8 @@ body {
       padding: 32px 16px 32px 16px;
     }
     &__container-2 {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       gap: 20px 20px;
     }
@@ -595,7 +556,6 @@ body {
       padding: 10px;
       font-size: 16px;
       font-weight: 300;
-      -webkit-box-shadow: 8px 16px 40px rgba(0, 0, 0, 0.06);
       box-shadow: 8px 16px 40px rgba(0, 0, 0, 0.06);
       position: relative;
       text-align: center;
@@ -636,7 +596,6 @@ body {
     }
 
     &__packshot {
-      -webkit-transform: scale(0.8);
       transform: scale(0.8);
     }
 
@@ -649,23 +608,15 @@ body {
     }
 
     &__container {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px 40px;
     }
 
     &__container-narrow {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       gap: 20px 1px;
     }
@@ -673,15 +624,8 @@ body {
     &__single {
       width: 253px;
       max-width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: column;
       flex-flow: column;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
       justify-content: flex-end;
     }
 
@@ -734,7 +678,6 @@ body {
       background: #1d1d1b;
       text-decoration: none;
       display: block;
-      -webkit-transition: background 0.3s;
       transition: background 0.3s;
     }
     &__link-narrow {
@@ -830,13 +773,8 @@ body {
 
   #es-loreal.es-loreal .es-slick-carousel--desktop {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     gap: 2px 1px;
   }
@@ -863,7 +801,6 @@ body {
     margin-bottom: 32px;
   }
   #es-loreal.es-loreal .es-cross__packshot {
-    -webkit-transform: scale(1);
     transform: scale(1);
     margin-bottom: 90px;
   }
@@ -881,11 +818,7 @@ body {
     text-align: center;
   }
   #es-loreal.es-loreal .es-multi__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 32px;
   }
@@ -899,8 +832,6 @@ body {
   }
   #es-loreal.es-loreal .es-multi__par {
     text-align: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -966,7 +897,6 @@ body {
     text-align: left;
     top: 26%;
     right: 8%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
 
@@ -1009,32 +939,17 @@ body {
     font-size: 32px;
   }
   #es-loreal.es-loreal .es-you__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
   #es-loreal.es-loreal .es-benefits__banner {
     background: url('../images/benefit-bg.png') no-repeat center;
     background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row;
     flex-flow: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0 16px;
   }
@@ -1075,14 +990,8 @@ body {
 
   #es-loreal.es-loreal .es-cross_container_photo {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   #es-loreal.es-loreal .es-cross_container_photo {
@@ -1094,7 +1003,10 @@ body {
 
   #es-loreal.es-loreal .es-cross__image {
     width: 35%;
+    -o-object-fit: cover;
     object-fit: cover;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   #es-loreal.es-loreal .es-cross__image img {
@@ -1113,7 +1025,6 @@ body {
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -1124,7 +1035,6 @@ body {
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -1132,12 +1042,10 @@ body {
 @-webkit-keyframes slidedown {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-32px);
     transform: translateY(-32px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -1145,12 +1053,10 @@ body {
 @keyframes slidedown {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-32px);
     transform: translateY(-32px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -1158,12 +1064,10 @@ body {
 @-webkit-keyframes slideright {
   from {
     opacity: 0.3;
-    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -1171,12 +1075,10 @@ body {
 @keyframes slideright {
   from {
     opacity: 0.3;
-    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -1184,12 +1086,10 @@ body {
 @-webkit-keyframes slideleft {
   from {
     opacity: 0.3;
-    -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -1197,15 +1097,12 @@ body {
 @keyframes slideleft {
   from {
     opacity: 0.3;
-    -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=style.css.map */
 @media screen and (min-width: 768px) {
 }

@@ -868,7 +868,7 @@ body {
   #es-loreal.es-loreal .es-cross__image {
     width: 35%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -917,5 +917,4 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
