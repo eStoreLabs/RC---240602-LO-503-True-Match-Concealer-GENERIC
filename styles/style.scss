@@ -75,30 +75,26 @@ body {
       margin-bottom: 32px;
     }
 
-    &__bg img {
-      /* max-width: none; */
-    }
-
     &__banner {
       position: relative;
     }
 
     &__title {
-      margin-bottom: 20px;
+      margin: 0;
       padding: 0;
       line-height: inherit;
       font-family: inherit;
       font-weight: inherit;
       padding: 0 16px;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 30px;
       opacity: 0;
       -webkit-animation: slidedown 0.6s ease forwards;
       animation: slidedown 0.6s ease forwards;
       -webkit-animation-delay: 0.3s;
       animation-delay: 0.3s;
-      margin-bottom: 8px;
-      margin-top: 4px;
+      text-align: center;
+      text-transform: uppercase;
     }
     &__sub {
       margin: 0;
@@ -112,24 +108,55 @@ body {
       text-align: center;
     }
     &-content img {
-      padding-left: 20px;
+      width: 45%;
+      max-width: 191px;
+      margin-bottom: 30px;
     }
 
     &__subtitle {
-      margin-top: 20px;
       padding: 0;
       line-height: inherit;
       font-family: inherit;
       font-weight: inherit;
-      padding: 0 16px;
-      font-weight: 300;
-      font-size: 17px;
+      font-weight: 600;
+      font-size: 23px;
       opacity: 0;
       -webkit-animation: slidedown 0.6s ease forwards;
       animation: slidedown 0.6s ease forwards;
       -webkit-animation-delay: 0.3s;
       animation-delay: 0.3s;
-      margin-bottom: 32px;
+      text-align: center;
+      text-transform: uppercase;
+
+      &--logo {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+
+    &__disclaimer {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      font-weight: 300;
+      font-size: 14px;
+      opacity: 0;
+      -webkit-animation: slidedown 0.6s ease forwards;
+      animation: slidedown 0.6s ease forwards;
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
     }
 
     &__img {
@@ -166,6 +193,30 @@ body {
       margin-top: 15px;
       text-align: center;
     }
+
+    &__badge {
+      position: relative;
+    }
+
+    &__badge-title {
+      position: absolute;
+      @include text;
+      font-weight: 600;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+
+      &--bold {
+        font-weight: 700;
+      }
+    }
+
+    &__badge-img {
+      max-width: 275px;
+    }
   }
 
   .es-info {
@@ -180,7 +231,6 @@ body {
       color: inherit;
       font-family: inherit;
       font-weight: inherit;
-      margin-bottom: 32px;
       font-weight: 300;
       text-transform: uppercase;
       font-size: 32px;
@@ -738,16 +788,43 @@ body {
 }
 
 @media screen and (min-width: 998px) {
+  #es-loreal.es-loreal .es-kv {
+    position: relative;
+  }
+
+  #es-loreal.es-loreal .es-kv__subtitle--main-text {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #fff;
+  }
+
+  #es-loreal.es-loreal .es-kv__disclaimer {
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+  }
+
   #es-loreal.es-loreal .es-kv-content {
     position: absolute;
     text-align: left;
-    padding-top: 60px;
-    height: 100%;
-    width: 100%;
-    top: 50%;
-    left: 10px;
+    top: 25%;
+    right: 6%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+
+  #es-loreal.es-loreal .es-kv__title-group {
+    position: absolute;
+    bottom: 50px;
+    left: 3%;
+  }
+  #es-loreal.es-loreal .es-kv__badge-wrapper {
+    position: absolute;
+    left: 54%;
+    top: 65%;
+    transform: translate(-50%, -50%);
   }
 
   #es-loreal.es-loreal .es-kv__badge-1 {
@@ -853,7 +930,7 @@ body {
     padding: 96px 0 0 0;
   }
   #es-loreal.es-loreal .es-cross__content {
-    width: 65%;
+    width: 100%;
     /* padding: 20px 50px; */
   }
 
